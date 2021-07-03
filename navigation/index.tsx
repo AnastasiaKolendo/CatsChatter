@@ -13,7 +13,7 @@ import {Octicons, MaterialIcons, MaterialCommunityIcons} from '@expo/vector-icon
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
-import BottomTabNavigator from './BottomTabNavigator';
+import BottomTabNavigator from './MainTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
@@ -52,8 +52,8 @@ function RootNavigator() {
           width: 60, 
           justifyContent: 'space-between',
           marginRight: 10}}>
-            <Octicons name='search' size={24} color={'white'}/>
-            <MaterialCommunityIcons name="dots-vertical" size={24} color={'white'}/>
+            <Octicons name='search' size={22} color={'white'}/>
+            <MaterialCommunityIcons name="dots-vertical" size={22} color={'white'}/>
           </View>
         )
       }}/>
