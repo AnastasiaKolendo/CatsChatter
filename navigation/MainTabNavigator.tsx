@@ -26,8 +26,12 @@ export default function BottomTabNavigator() {
       tabBarOptions={{ 
         activeTintColor: Colors[colorScheme].background,
         style: {
-          backgroudColor: Colors[colorScheme].tint,
-      } 
+          backgroundColor: Colors[colorScheme].tint,
+      },
+      indicatorStyle: {
+        backgroundColor: Colors[colorScheme].background,
+        height: 3,
+      }
       }}>
       <MainTab.Screen
         name="TabOne"
